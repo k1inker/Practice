@@ -11,7 +11,7 @@ void toAnagramm(string result) {
         result[j] = result[i];
         result[i] = temp;
     }
-    cout << "Àíàãðàììà - " << result;
+    cout << "ÐÐ½Ð°Ð³Ñ€Ð°Ð¼Ð¼Ð° - " << result;
 }
 string removeSigns(char* text) {
     srand(time(0));
@@ -29,7 +29,7 @@ int main()
 {  
     setlocale(LC_ALL, "Russian");
     char* text = (char*)malloc(1024);
-    cout << "Ââåäèòå òåêñò äëÿ ïåðåâîäà â àíàãðàììó\n";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐºÑÑ‚ Ð´Ð»Ñ Ð¿ÐµÑ€ÐµÐ²Ð¾Ð´Ð° Ð² Ð°Ð½Ð°Ð³Ñ€Ð°Ð¼Ð¼Ñƒ\n";
     cin.getline(text, 1024);
     toAnagramm(removeSigns(text));
 }
